@@ -1,0 +1,55 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* impede scroll ao botão fugir */
+    position: relative;
+}
+
+h1 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.botões {
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+
+button {
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
+    z-index: 10;
+}
+
+#sim {
+    left: 50%;
+    transform: translateX(-150%);
+    background-color: #28a745;
+    color: white;
+}
+
+#sim:hover {
+    background-color: #218838;
+    transform: translateX(-150%) scale(1.1);
+}
+
+#nao {
+    left: 50%;
+    transform: translateX(50%);
+    background-color: #dc3545;
+    color: white;
+}
